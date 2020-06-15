@@ -32,7 +32,7 @@ namespace CompetitionGame.Models
                 for (int k = 0; k < 6; k++)
                 {
                     var awayGoalsIntpercentage = evalAway.ProbabilityMassFunction(k);
-                    var potentialOutcome = (homeGoalsIntpercentage * awayGoalsIntpercentage) * 100;
+                    var potentialOutcome = (homeGoalsIntpercentage * awayGoalsIntpercentage);
                     if (potentialOutcome > probabilityLimit)
                     {
                         var res = (request.homeTeam, j, request.awayTeam, k);

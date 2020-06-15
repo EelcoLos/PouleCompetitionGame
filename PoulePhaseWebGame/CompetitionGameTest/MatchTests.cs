@@ -31,23 +31,16 @@ namespace CompetitionGameTest
         {
             SetupFootballMatchTests(out List<Team> teams, out FootballMatchFactory matchFactory, out HistoryLeagueStats leagueStats);
             var potentialOutcomeCalculator = new PoissonPotentialOutcomeCalculator();
-            //var historyLeagueStats = new HistoryLeagueStats
-            //{
-            //    Homegoals = 436,
-            //    Homematches = 17,
-            //    Awaygoals = 279,
-            //    Awaymatches = 17
-            //};
-            var match = new MatchHandler(matchFactory, potentialOutcomeCalculator); // , teamlist, homegoals, homematches, awaygoals, awaymatches
+
+            var match = new MatchHandler(matchFactory, potentialOutcomeCalculator);
             MatchRequest matchRequest = matchFactory.CreateRequest(teams, leagueStats);
             var result = match.Handle(matchRequest);
 
-            //if (result.Scores.GetValueOrDefault(team1) == result.Scores.GetValueOrDefault(team2))
-            //{
-            //    Assert.IsTrue(result.Scores.GetValueOrDefault(team1) == result.Scores.GetValueOrDefault(team2), "Tie match");
-            //    Assert.IsTrue(result.winner == null, "No winner of the match");
-            //}
-            //Assert.IsTrue(result.winner.TeamName == team1.TeamName);
+            if (result.Scores.GetValueOrDefault(teams[0]) == result.Scores.GetValueOrDefault(teams[1]))
+            {
+                Assert.IsTrue(result.Scores.GetValueOrDefault(teams[0]) == result.Scores.GetValueOrDefault(teams[1]), "Tie match");
+                Assert.IsTrue(result.winner == null, "No winner of the match");
+            }
             Assert.IsTrue(result.winRemarks.Name == "NoRemarks");
         }
 
@@ -60,16 +53,8 @@ namespace CompetitionGameTest
             {
                 var json = r.ReadToEnd();
                 var jsonObjects = JObject.Parse(json);
-                var teamJson = jsonObjects["teams"].ToObject<List<Team>>();
-                string historyLeagueStatsJson = jsonObjects["historyleaguestats"].ToString();
-                var tms = new List<Team>();
-                //foreach (var item in jsonObjects["teams"])
-                //{
-                //    Team team = JsonConvert.DeserializeObject<Team>(item.Children[0].ToString());
-                //    tms.Add(team);
-                //}
-                //teams = JsonConvert.DeserializeObject<List<Team>>(teamJson);
-                historyLeagueStats = JsonConvert.DeserializeObject<HistoryLeagueStats>(historyLeagueStatsJson);
+                teams = jsonObjects["teams"].ToObject<List<Team>>();
+                historyLeagueStats = jsonObjects["historyleaguestats"].ToObject<HistoryLeagueStats>();
             }
             leagueStats = historyLeagueStats;
             matchFactory = new FootballMatchFactory();

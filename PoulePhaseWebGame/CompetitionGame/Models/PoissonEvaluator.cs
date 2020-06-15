@@ -16,7 +16,7 @@ namespace CompetitionGame
             //(l^k / k! ) * e^-l
             //l = lamda
             int kFactorial = Factorial(k);
-            double numerator = Math.Pow(Math.E, -(double)lambda) * Math.Pow((double)lambda, (double)k) * 1000000000000000000;
+            double numerator = Math.Pow(Math.E, -(double)lambda) * Math.Pow((double)lambda, (double)k);
 
             decimal p = (decimal)numerator / (decimal)kFactorial;
             return p;
