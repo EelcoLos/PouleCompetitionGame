@@ -1,0 +1,40 @@
+{
+    "teams": [
+      {
+        "team": {
+          "teamName": "Ajax",
+          "homeStats": {
+            "gamesPlayed": 17,
+            "goalsMade": 70,
+            "goalsConceded": 13
+          },
+          "awayStats": {
+            "gamesPlayed": 17,
+            "goalsMade": 49,
+            "goalsConceded": 19
+          }
+        }
+      },
+      {
+        "team": {
+          "teamName": "Feijenoord",
+          "homeStats": {
+            "gamesPlayed": 17,
+            "goalsMade": 43,
+            "goalsConceded": 16
+          },
+          "awayStats": {
+            "gamesPlayed": 17,
+            "goalsMade": 25,
+            "goalsConceded": 32
+          }
+        }
+      }
+    ],
+  "historyleaguestats": {
+    "homegoals": 436,
+    "homematches": 17,
+    "awaygoals": 279,
+    "awaymatches": 17
+  }
+}

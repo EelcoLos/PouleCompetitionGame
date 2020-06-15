@@ -8,7 +8,6 @@ namespace CompetitionGame
         public Dictionary<Team, int> Scores;
         public Team winner;
         public LocalizedString winRemarks;
-
     }
 
 }

@@ -1,93 +1,46 @@
-﻿using Microsoft.Extensions.Localization;
+﻿using CompetitionGame.Models;
+using Microsoft.Extensions.Localization;
 using System;
-using System.Collections.Generic;
 
 namespace CompetitionGame
 {
-    public class Match
+    public class MatchHandler : ICommandHandler<MatchRequest, MatchResult>
     {
-        private List<Team> _teams;
-        private int homeGoals;
-        private int homeMatches;
-        private float awayGoals;
-        private int awayMatches;
-        private decimal probabilityLimit = 0.15M;
+        private MatchFactory _matchResultFactory;
+        private readonly ICommandHandler<CalculatePotentialOutcomeRequest, CalculatePotentialOutcomeResult> _outcomeHandler;
 
-        public bool OneTeam => _teams?.Count == 1;
+        
 
-        public float averageHomeGoals => homeGoals / homeMatches;
-        public float averageAwayGoals => awayGoals / awayMatches;
-
-        MatchResultFactory matchResultFactory;
-
-        public Match(List<Team> teams, int HomeGoals = 10, int HomeMatches = 10, int AwayGoals = 12, int AwayMatches = 12)
+        public MatchHandler(MatchFactory MatchResultFactory, ICommandHandler<CalculatePotentialOutcomeRequest, CalculatePotentialOutcomeResult> OutcomeHandler)
         {
-            _teams = teams;
-            homeGoals = HomeGoals;
-            homeMatches = HomeMatches;
-            awayGoals = AwayGoals;
-            awayMatches = AwayMatches;
+            _matchResultFactory = MatchResultFactory;
+            _outcomeHandler = OutcomeHandler;
         }
 
-
-        public MatchResult Execute()
+        public MatchResult Handle(MatchRequest request)
         {
-            matchResultFactory = new FootballMatchResultFactory();
-
-            if (OneTeam)
+            if (request.OneTeam)
             {
                 LocalizedString winByDefault = new LocalizedString("WinByDefault", "Won by default, only 1 team participated in the match");
-                var OneTeamresult = matchResultFactory.CreateResult((_teams[0],3,null, 0), winByDefault);
+                var OneTeamresult = _matchResultFactory.CreateResult((request.teams[0],3,null, 0), winByDefault);
                 return OneTeamresult;
             }
-
             Random r = new Random();
 
-            var homeTeamStrength = _teams[0].CalculateAttackAndDefenseStrength(0);
             (Team hometeam, int score, Team otherteam, int awayscore) matchResult = (null,-1,null,-1);  // 'Initialize'
-            for (int i = 1; i < _teams.Count; i++)
+            for (int i = 1; i < request.teams.Count; i++)
             {
-                var potentialOutcomes = CalculatePotentialOutcomes(r, homeTeamStrength, i);
+                var outcomerequest = CalculatePotentialOutcomeFactory.CreatePotentialOutcomeRequest(request.teams[0], request.teams[i], request.leagueStats.Homegoals, request.leagueStats.Homematches, request.leagueStats.Awaygoals, request.leagueStats.Awaymatches);
+                var outcomeResult = _outcomeHandler.Handle(outcomerequest); //CalculatePotentialOutcomes(r, homeTeamStrength, i);
                 // randomize potential outcome
-                if (potentialOutcomes.Count == 0) potentialOutcomes.Add((_teams[0], 0, _teams[i], 0)); // in case no found, add "0-0" to potential outcomes
-                matchResult = potentialOutcomes[r.Next(0, potentialOutcomes.Count - 1)];
+                if (outcomeResult.PotentialOutcomes.Count == 0) outcomeResult.PotentialOutcomes.Add((request.teams[0], 0, request.teams[i], 0)); // in case no found, add "0-0" to potential outcomes
+                matchResult = outcomeResult.PotentialOutcomes[r.Next(0, outcomeResult.PotentialOutcomes.Count - 1)];
             }
 
             LocalizedString noRemarks = new LocalizedString("NoRemarks", string.Empty);
 
-            var result = matchResultFactory.CreateResult(matchResult, noRemarks);
+            var result = _matchResultFactory.CreateResult(matchResult, noRemarks);
             return result;
         }
-
-        private List<(Team hometeam, int score, Team otherteam, int awayscore)> CalculatePotentialOutcomes(Random r, (float AttackStrength, float DefenseStrength) homeTeamStrength, int i)
-        {
-            // Home team attack strength * away team defence strength * average number of home goals
-            var projectedHomeTeamGoals = homeTeamStrength.AttackStrength * _teams[i].AwayStats.DefenseStrength * averageHomeGoals;
-            // Away team attack strength *home team defence strength* average number of away goals
-            var projectedAwayTeamGoals = _teams[i].AwayStats.AttackStrength * homeTeamStrength.DefenseStrength * averageAwayGoals;
-
-            var evalHome = new PoissonEvaluator(Convert.ToDecimal(projectedHomeTeamGoals));
-            var evalAway = new PoissonEvaluator(Convert.ToDecimal(projectedAwayTeamGoals));
-            var potentialOutcomes = new List<(Team hometeam, int score, Team otherteam, int awayscore)>();
-
-            for (int j = 0; j < 6; j++)
-            {
-                var homeGoalsIntpercentage = evalHome.ProbabilityMassFunction(j);
-
-                for (int k = 0; k < 6; k++)
-                {
-                    var awayGoalsIntpercentage = evalAway.ProbabilityMassFunction(k);
-                    var potentialOutcome = (homeGoalsIntpercentage * awayGoalsIntpercentage) * 100;
-                    if (potentialOutcome > probabilityLimit)
-                    {
-                        var res = (_teams[0], j, _teams[i], k);
-                        potentialOutcomes.Add(res);
-                    }
-                }
-            }
-
-            return potentialOutcomes;
-        }
     }
-
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CompetitionGame
 {
-    public abstract class MatchResultFactory
+    public abstract class MatchFactory
     {
         public virtual MatchResult CreateResult((Team hometeam, int score, Team otherteam, int awayscore) outcome, LocalizedString winRemarks)
         {
@@ -16,6 +16,9 @@ namespace CompetitionGame
 
             return matchResult;
         }
+
+        public virtual MatchRequest CreateRequest(List<Team> Teams, HistoryLeagueStats LeagueStats) =>
+            new MatchRequest { teams = Teams , leagueStats = LeagueStats};
     }
 
 }

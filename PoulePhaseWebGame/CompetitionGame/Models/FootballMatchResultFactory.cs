@@ -2,7 +2,7 @@
 
 namespace CompetitionGame
 {
-    public class FootballMatchResultFactory : MatchResultFactory
+    public class FootballMatchFactory : MatchFactory
     {
         public override MatchResult CreateResult((Team hometeam, int score, Team otherteam, int awayscore) outcome, LocalizedString winRemarks)
         {
