@@ -35,8 +35,9 @@ namespace CompetitionGameTest
 
         public void Initialize()
         {
-            _matchExecutioner = new FakeMatchCommand();
             _matchFactory = new FootballMatchFactory();
+            //_matchExecutioner = new MatchHandler(_matchFactory, new PoissonPotentialOutcomeCalculator());
+            _matchExecutioner = new FakeMatchCommand();
             _RRSelector = new RoundRobinTournamentSelector(_matchExecutioner, _matchFactory);
         }
     }
