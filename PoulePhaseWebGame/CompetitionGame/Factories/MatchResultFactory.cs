@@ -1,7 +1,9 @@
-﻿using Microsoft.Extensions.Localization;
+﻿using CompetitionGame.Models.Request;
+using CompetitionGame.Models.Result;
+using Microsoft.Extensions.Localization;
 using System.Collections.Generic;
 
-namespace CompetitionGame
+namespace CompetitionGame.Factories
 {
     public abstract class MatchFactory
     {

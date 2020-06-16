@@ -1,8 +1,10 @@
-﻿using CompetitionGame.Models;
+﻿using CompetitionGame.Factories;
+using CompetitionGame.Models.Request;
+using CompetitionGame.Models.Result;
 using Microsoft.Extensions.Localization;
 using System;
 
-namespace CompetitionGame
+namespace CompetitionGame.Command
 {
     public class MatchHandler : ICommandHandler<MatchRequest, MatchResult>
     {

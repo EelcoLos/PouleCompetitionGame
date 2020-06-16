@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Localization;
 using System.Collections.Generic;
 
-namespace CompetitionGame
+namespace CompetitionGame.Models.Result
 {
     public class MatchResult
     {

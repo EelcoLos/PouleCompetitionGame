@@ -1,4 +1,6 @@
-﻿namespace CompetitionGame.Models
+﻿using CompetitionGame.Command;
+
+namespace CompetitionGame.Factories
 {
     public static class CalculatePotentialOutcomeFactory
     {

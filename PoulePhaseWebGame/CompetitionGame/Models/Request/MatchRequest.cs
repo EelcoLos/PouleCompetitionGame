@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CompetitionGame
+namespace CompetitionGame.Models.Request
 {
     public class MatchRequest
     {

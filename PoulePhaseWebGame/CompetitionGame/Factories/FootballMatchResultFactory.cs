@@ -1,6 +1,7 @@
-﻿using Microsoft.Extensions.Localization;
+﻿using CompetitionGame.Models.Result;
+using Microsoft.Extensions.Localization;
 
-namespace CompetitionGame
+namespace CompetitionGame.Factories
 {
     public class FootballMatchFactory : MatchFactory
     {

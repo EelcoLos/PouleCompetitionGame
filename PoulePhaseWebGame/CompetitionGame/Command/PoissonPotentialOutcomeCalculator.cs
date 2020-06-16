@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace CompetitionGame.Models
+namespace CompetitionGame.Command
 {
     public class PoissonPotentialOutcomeCalculator : ICommandHandler<CalculatePotentialOutcomeRequest, CalculatePotentialOutcomeResult>
     {

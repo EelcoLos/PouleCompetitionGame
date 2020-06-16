@@ -1,7 +1,9 @@
 using CompetitionGame;
-using CompetitionGame.Models;
+using CompetitionGame.Command;
+using CompetitionGame.Factories;
+using CompetitionGame.Models.Request;
+using CompetitionGame.Models.Result;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.IO;
@@ -24,10 +26,11 @@ namespace CompetitionGameTest
             Assert.IsTrue(result.Scores.GetValueOrDefault(teams[0]) == 3);
             Assert.IsTrue(result.winner.TeamName == teams[0].TeamName);
             Assert.IsTrue(result.winRemarks.Name == "WinByDefault");
+            Assert.IsTrue(result.GetType() == typeof(MatchResult));
         }
 
         [TestMethod]
-        public void PlayNormal90MinuteMatch()
+        public void PlayNormalMatch()
         {
             SetupFootballMatchTests(out List<Team> teams, out FootballMatchFactory matchFactory, out HistoryLeagueStats leagueStats);
             var potentialOutcomeCalculator = new PoissonPotentialOutcomeCalculator();
@@ -42,9 +45,10 @@ namespace CompetitionGameTest
                 Assert.IsTrue(result.winner == null, "No winner of the match");
             }
             Assert.IsTrue(result.winRemarks.Name == "NoRemarks");
+            Assert.IsTrue(result.GetType() == typeof(MatchResult));
         }
 
-        private static void SetupFootballMatchTests(out List<Team> teams, out FootballMatchFactory matchFactory, out HistoryLeagueStats leagueStats)
+        public static void SetupFootballMatchTests(out List<Team> teams, out FootballMatchFactory matchFactory, out HistoryLeagueStats leagueStats)
         {
             teams = new List<Team>();
             HistoryLeagueStats historyLeagueStats = new HistoryLeagueStats();
