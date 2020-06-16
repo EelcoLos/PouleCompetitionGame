@@ -22,29 +22,57 @@ namespace CompetitionGame.Command
 
         public RoundRobinResult Handle(RoundRobinRequest request)
         {
+            List<List<Team>> tournamentList = ConstructTournamentList(request);
+            List<MatchResult> matchResults = new List<MatchResult>();
+            PlayTournament(request, tournamentList, matchResults);
+            var result = RoundRobinFactory.CreateResult(matchResults);
 
+            return result;
+        }
+
+        /// <summary>
+        /// Generate a Round Robin style tournament List, using numbers, then attach that to an actual list of matchups
+        /// </summary>
+        /// <param name="request">Teams for the tournament</param>
+        /// <returns>The tournament matchup list</returns>
+        private List<List<Team>> ConstructTournamentList(RoundRobinRequest request)
+        {
             var teamRotation = GenerateRoundRobin(request.teams.Count);
             var tournamentList = new List<List<Team>>();
 
-            for (int i = 0; i < teamRotation.Length - 1; i++)
+            // GenerateRoundRobin works with rounds, so have to rotate through the rounds to generate the list.
+            for (int i = 0; i < teamRotation.GetUpperBound(1); i++)
             {
-                for (int j = 0; j < 1; j++)
+                for (int j = 0; j < request.teams.Count-1; j++)
                 {
                     var matchuplist = new List<Team>();
-                    var team1 = request.teams[teamRotation[j,i]];
-                    var team2 = request.teams[teamRotation[j+1, i]];
+                    int teamnumber1 = j;
+                    int teamnumber2 = teamRotation[j, i];
+                    var team1 = request.teams[teamnumber1];
+                    var team2 = request.teams[teamnumber2];
                     matchuplist.Add(team1);
                     matchuplist.Add(team2);
                     tournamentList.Add(matchuplist);
-                }
+                } 
             }
+
+            return tournamentList;
+        }
+
+        /// <summary>
+        /// Play the actual tournament.
+        /// </summary>
+        /// <remarks>I know this could be a seperate action/class. As it stands, it's only creating more classes then already necessary</remarks>
+        /// <param name="request"></param>
+        /// <param name="tournamentList"></param>
+        /// <param name="matchResults"></param>
+        private void PlayTournament(RoundRobinRequest request, List<List<Team>> tournamentList, List<MatchResult> matchResults)
+        {
             foreach (var matchup in tournamentList)
             {
                 var matchrequest = _matchFactory.CreateRequest(matchup, request.stats);
-                _matchCommand.Handle(matchrequest);
+                matchResults.Add(_matchCommand.Handle(matchrequest));
             }
-
-            return new RoundRobinResult();
         }
 
         // Return an array where results(i, j) gives
@@ -88,7 +116,7 @@ namespace CompetitionGame.Command
             teams[0] = tmp;
         }
 
-        private int[,] GenerateRoundRobin(int num_teams)
+        private int[,] GenerateRoundRobinEven(int num_teams)
         {
             // Generate the result for one fewer teams.
             int[,] results = GenerateRoundRobinOdd(num_teams - 1);
@@ -114,6 +142,14 @@ namespace CompetitionGame.Command
             }
 
             return results2;
+        }
+
+        private int[,] GenerateRoundRobin(int num_teams)
+        {
+            if (num_teams % 2 == 0)
+                return GenerateRoundRobinEven(num_teams);
+            else
+                return GenerateRoundRobinOdd(num_teams);
         }
     }
 }

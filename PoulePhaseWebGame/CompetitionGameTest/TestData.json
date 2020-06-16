@@ -25,8 +25,215 @@
         "goalsMade": 25,
         "goalsConceded": 32
       }
+    },
+    {
+      "teamName": "PSV",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "FC Utrecht",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "sc Heerenveen",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "NAC Breda",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "FC Groningen",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "AZ Alkmaar",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "Vitesse",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "PEC Zwolle",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "Willem II",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "ADO Den Haag",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "De Graafschap",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "Heracles Almelo",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "Fortuna Sittard",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "FC Emmen",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "VVV-Venlo",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
+    },
+    {
+      "teamName": "SBV Excelsior",
+      "homeStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 43,
+        "goalsConceded": 16
+      },
+      "awayStats": {
+        "gamesPlayed": 17,
+        "goalsMade": 25,
+        "goalsConceded": 32
+      }
     }
-
   ],
   "historyleaguestats": {
     "homegoals": 436,
