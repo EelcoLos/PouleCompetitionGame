@@ -27,9 +27,11 @@ namespace CompetitionGameTest
 
             Assert.IsTrue(result.GetType() == typeof(RoundRobinResult));
             Assert.IsNotNull(result.matchResults);
-            Assert.IsTrue(result.matchResults[0].Scores[request.teams[1]] == 1);
-            Assert.IsTrue(result.matchResults[0].Scores[request.teams[0]] == 0);
-            Assert.IsTrue(result.matchResults[0].winner == request.teams[1]);
+            Team winningTeam = request.teams[0];
+            Team losingTeam = request.teams[3];
+            Assert.IsTrue(result.matchResults[0].Scores[winningTeam] == 1);
+            Assert.IsTrue(result.matchResults[0].Scores[losingTeam] == 0);
+            Assert.IsTrue(result.matchResults[0].winner == winningTeam);
             Assert.IsTrue(result.matchResults[0].winRemarks.Name == "NoRemarks");
         }
 
