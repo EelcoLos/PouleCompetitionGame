@@ -1,4 +1,5 @@
-﻿using CompetitionGame.Factories;
+﻿using CompetitionGame.Evaluators;
+using CompetitionGame.Factories;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
 using Microsoft.Extensions.Localization;
