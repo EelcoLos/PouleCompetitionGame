@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompetitionGame", "CompetitionGame\CompetitionGame.csproj", "{1D037276-5DD5-48EC-AA30-F349F4DA3773}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompetitionGame", "CompetitionGame\CompetitionGame.csproj", "{1D037276-5DD5-48EC-AA30-F349F4DA3773}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompetitionGameTest", "CompetitionGameTest\CompetitionGameTest.csproj", "{4401BCEE-B3EE-4FE4-9EA6-CD9B9DCDC08A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1D037276-5DD5-48EC-AA30-F349F4DA3773}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D037276-5DD5-48EC-AA30-F349F4DA3773}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D037276-5DD5-48EC-AA30-F349F4DA3773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4401BCEE-B3EE-4FE4-9EA6-CD9B9DCDC08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4401BCEE-B3EE-4FE4-9EA6-CD9B9DCDC08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4401BCEE-B3EE-4FE4-9EA6-CD9B9DCDC08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4401BCEE-B3EE-4FE4-9EA6-CD9B9DCDC08A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
