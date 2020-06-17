@@ -27,12 +27,98 @@ namespace CompetitionGameTest
 
             Assert.IsTrue(result.GetType() == typeof(RoundRobinResult));
             Assert.IsNotNull(result.matchResults);
-            Team winningTeam = request.teams[0];
-            Team losingTeam = request.teams[3];
-            Assert.IsTrue(result.matchResults[0].Scores[winningTeam] == 1);
-            Assert.IsTrue(result.matchResults[0].Scores[losingTeam] == 0);
-            Assert.IsTrue(result.matchResults[0].winner == winningTeam);
+
+            #region Round Robin Asserts
+            // Round Robin should be the following matchups
+            // Round 	   Match one 	      Match two
+            // Round 1     Team A v.Team D    Team B v.Team C
+            // Round 2     Team C v.Team A    Team D v.Team B
+            // Round 3     Team A v.Team B    Team C v.Team D
+
+            // Noticed with the switching etc, that round 3 is round 1 and visa versa, but that's ok, all the matchups are still the same
+            Team TeamA = request.teams[0];
+            Team TeamB = request.teams[1];
+            Team TeamC = request.teams[2];
+            Team TeamD = request.teams[3];
+
+            // Round 1: Team A v.Team B
+            try
+            {
+                Assert.IsTrue(result.matchResults[0].Scores[TeamA] == 1);
+                Assert.IsTrue(result.matchResults[0].Scores[TeamB] == 0);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Assert.Fail("Round 1 didn't have the correct teams: Team A v.Team B");
+            }
+
+            try
+            {
+                // Round 1: Team C v.Team D
+                Assert.IsTrue(result.matchResults[1].Scores[TeamC] == 1);
+                Assert.IsTrue(result.matchResults[1].Scores[TeamD] == 0);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Assert.Fail("Round 1 didn't have the correct teams: Team C v.Team D");
+            }
+
+            // Round 2: Team C v.Team A
+            try
+            {
+                Assert.IsTrue(result.matchResults[2].Scores[TeamC] == 1);
+                Assert.IsTrue(result.matchResults[2].Scores[TeamA] == 0);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Assert.Fail("Round 2 didn't have the correct teams: Team C v.Team A");
+            }
+
+            // Round 2: Team D v.Team B
+            try
+            {
+                Assert.IsTrue(result.matchResults[3].Scores[TeamD] == 1);
+                Assert.IsTrue(result.matchResults[3].Scores[TeamB] == 0);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Assert.Fail("Round 2 didn't have the correct teams: Team D v.Team B");
+            }
+
+            // Round 3: Team A v.Team D
+            try
+            {
+                Assert.IsTrue(result.matchResults[4].Scores[TeamA] == 1);
+                Assert.IsTrue(result.matchResults[4].Scores[TeamD] == 0);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Assert.Fail("Round 3 didn't have the correct teams: Team A v.Team D");
+            }
+
+            // Round 3: Team B v.Team C
+            try
+            {
+                Assert.IsTrue(result.matchResults[5].Scores[TeamB] == 1);
+                Assert.IsTrue(result.matchResults[5].Scores[TeamC] == 0);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Assert.Fail("Round 3 didn't have the correct teams: Team B v.Team C");
+            }
+            #endregion
+
+
             Assert.IsTrue(result.matchResults[0].winRemarks.Name == "NoRemarks");
+        }
+
+        [TestMethod]
+        public void TestStatistics()
+        {
+            //RoundRobinResult result = new RoundRobinResult
+            //{
+            //    matchResults
+            //}
         }
 
         public void Initialize()

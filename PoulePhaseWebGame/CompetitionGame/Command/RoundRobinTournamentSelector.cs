@@ -37,25 +37,7 @@ namespace CompetitionGame.Command
         /// <returns>The tournament matchup list</returns>
         private List<List<Team>> ConstructTournamentList(RoundRobinRequest request)
         {
-            var teamRotation = GenerateRoundRobin(request.teams.Count);
-            var tournamentList = new List<List<Team>>();
-
-            // GenerateRoundRobin works with rounds, so have to rotate through the rounds to generate the list.
-            for (int i = 0; i < teamRotation.GetUpperBound(1); i++)
-            {
-                for (int j = 0; j < request.teams.Count-1; j++)
-                {
-                    var matchuplist = new List<Team>();
-                    int teamnumber1 = j;
-                    int teamnumber2 = teamRotation[j, i];
-                    var team1 = request.teams[teamnumber1];
-                    var team2 = request.teams[teamnumber2];
-                    matchuplist.Add(team1);
-                    matchuplist.Add(team2);
-                    tournamentList.Add(matchuplist);
-                } 
-            }
-
+            var tournamentList = GenerateRoundRobin(request.teams);          
             return tournamentList;
         }
 
@@ -75,81 +57,52 @@ namespace CompetitionGame.Command
             }
         }
 
-        // Return an array where results(i, j) gives
-        // the opponent of team i in round j.
-        // Note: num_teams must be odd.
-        private int[,] GenerateRoundRobinOdd(int num_teams)
+        private List<List<Team>> GenerateRoundRobin(List<Team> ListTeam)
         {
-            int n2 = (int)((num_teams - 1) / 2);
-            int[,] results = new int[num_teams, num_teams];
 
-            // Initialize the list of teams.
-            int[] teams = new int[num_teams];
-            for (int i = 0; i < num_teams; i++) teams[i] = i;
 
-            // Start the rounds.
-            for (int round = 0; round < num_teams; round++)
+            int numTeams = ListTeam.Count;
+            if (numTeams % 2 != 0)
             {
-                for (int i = 0; i < n2; i++)
-                {
-                    int team1 = teams[n2 - i];
-                    int team2 = teams[n2 + i + 1];
-                    results[team1, round] = team2;
-                    results[team2, round] = team1;
-                }
-
-                // Set the team with the bye.
-                results[teams[0], round] = BYE;
-
-                // Rotate the array.
-                RotateArray(teams);
+                ListTeam.Add(new Team(){TeamName = "BYE"});
             }
 
-            return results;
-        }
 
-        // Rotate the entries one position.
-        private void RotateArray(int[] teams)
-        {
-            int tmp = teams[^1];
-            Array.Copy(teams, 0, teams, 1, teams.Length - 1);
-            teams[0] = tmp;
-        }
+            int numDays = (numTeams - 1);
+            int halfSize = numTeams / 2;
 
-        private int[,] GenerateRoundRobinEven(int num_teams)
-        {
-            // Generate the result for one fewer teams.
-            int[,] results = GenerateRoundRobinOdd(num_teams - 1);
+            List<Team> functionTeams = new List<Team>();
 
-            // Copy the results into a bigger array,
-            // replacing the byes with the extra team.
-            int[,] results2 = new int[num_teams, num_teams - 1];
-            for (int team = 0; team < num_teams - 1; team++)
+            functionTeams.AddRange(ListTeam); // Copy all the elements.
+            functionTeams.RemoveAt(0); // To exclude the first team.
+
+            int teamsSize = functionTeams.Count;
+            var tournamentList = new List<List<Team>>();
+            for (int day = 0; day < numDays; day++)
             {
-                for (int round = 0; round < num_teams - 1; round++)
+                Console.WriteLine("Day {0}", (day + 1));
+
+                int teamIdx = day % teamsSize;
+
+                Console.WriteLine("{0} vs {1}", functionTeams[teamIdx], ListTeam[0]);
+                if (day % 2 == 0)
+                    tournamentList.Add(new List<Team> { ListTeam[0], functionTeams[teamIdx] });
+                else
+                    tournamentList.Add(new List<Team> { functionTeams[teamIdx], ListTeam[0] });
+
+                for (int idx = 1; idx < halfSize; idx++)
                 {
-                    if (results[team, round] == BYE)
-                    {
-                        // Change the bye to the new team.
-                        results2[team, round] = num_teams - 1;
-                        results2[num_teams - 1, round] = team;
-                    }
-                    else
-                    {
-                        results2[team, round] = results[team, round];
-                    }
+                    var matchup = new List<Team>();
+                    int firstTeam = (day + idx) % teamsSize;
+                    int secondTeam = (day + teamsSize - idx) % teamsSize;
+                    Console.WriteLine("{0} vs {1}", functionTeams[firstTeam].TeamName, functionTeams[secondTeam].TeamName);
+                    matchup.Add(functionTeams[firstTeam]);
+                    matchup.Add(functionTeams[secondTeam]);
+                    tournamentList.Add(matchup);
                 }
             }
+            return tournamentList;
 
-            return results2;
-        }
-
-        private int[,] GenerateRoundRobin(int num_teams)
-        {
-            if (num_teams % 2 == 0)
-                return GenerateRoundRobinEven(num_teams);
-            else
-                return GenerateRoundRobinOdd(num_teams);
         }
     }
 }
