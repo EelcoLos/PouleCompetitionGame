@@ -9,11 +9,17 @@ namespace CompetitionGame.Data
     /// </summary>
     public class ExternalDataService : ICommandHandler<DataRequest, DataResult>
     {
-        ICommandHandler<ExternalRequest, ExternalData> dataClient;
+        private ICommandHandler<ExternalRequest, ExternalData> dataClient;
+
+        public ExternalDataService(ICommandHandler<ExternalRequest, ExternalData> DataClient)
+        {
+            dataClient = DataClient;
+        }
+
         public DataResult Handle(DataRequest request)
         {
             var data = dataClient.Handle(request.requestdata);
-            var jsonObjects = JObject.Parse(data);
+            var jsonObjects = JObject.Parse(data.Json);
             var teams = jsonObjects["teams"].ToObject<List<Team>>();
             var historyLeagueStats = jsonObjects["historyleaguestats"].ToObject<HistoryLeagueStats>();
             return new DataResult() { Teams = teams, HistoryStats = historyLeagueStats };

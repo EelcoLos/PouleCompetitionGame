@@ -33,7 +33,7 @@ namespace CompetitionGame
             // any IServiceProvider or the ConfigureContainer method
             // won't get called.
             services.AddOptions();
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
         }
 
         // ConfigureContainer is where you can register things directly
