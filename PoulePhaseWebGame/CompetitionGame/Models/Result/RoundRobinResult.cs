@@ -6,7 +6,7 @@ namespace CompetitionGame.Models.Result
 {
     public class RoundRobinResult
     {
-        private Dictionary<Team, int> competitionScore;
+        public Dictionary<Team, CompetitionNumbers> competitionScore;
         public List<MatchResult> matchResults;
         public new string ToString
         {

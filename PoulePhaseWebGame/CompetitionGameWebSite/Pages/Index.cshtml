@@ -36,7 +36,7 @@
                             <td>
                                 <input name="AreChecked" id="@tmp" type="checkbox" value="@i" checked="@defaultcheck" />
                             </td>
-                            <td><input name="jsonObj" type="hidden" id="@i" value="@obj"/>@obj["teamName"].ToString()</td>
+                            <td align="left"><input name="jsonObj" type="hidden" id="@i" value="@obj"/>@obj["teamName"].ToString()</td>
                     </tr>
                 }
             </table>
@@ -46,13 +46,38 @@
     @if (Model.showScorePanel)
     {
         <div class="Results">
-            <h2>Poule Results</h2>
+            <h2>Poule matches</h2>
             <table>
                 @foreach (var pouleresult in Model.apiResults)
                 {
                     <tr>
-                        <td>@pouleresult["ToString"]</td>
+                        <td align="left">@pouleresult["ToString"]</td>
                     </tr>
+                }
+            </table>
+        </div>
+
+        <div class="Compstats">
+            <h2>Competition Results</h2>
+            <table>
+                <tr>
+                    <th>Team Name</th>
+                    <th>Poule Points</th>
+                    <th>Goals For</th>
+                    <th>Goals Against</th>
+                </tr>
+                @foreach (var pouleresult in Model.apiResults)
+                {
+
+                    @if (pouleresult.ContainsKey("Key"))
+                    {
+                        <tr>
+                            <td align="left">@pouleresult["Key"]["teamName"]</td>
+                            <td>@pouleresult["Value"]["pouleStance"]</td>
+                            <td>@pouleresult["Value"]["goalsFor"]</td>
+                            <td>@pouleresult["Value"]["goalsAgainst"]</td>
+                        </tr>
+                    }
                 }
             </table>
         </div>

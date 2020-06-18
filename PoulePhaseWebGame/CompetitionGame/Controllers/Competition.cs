@@ -27,34 +27,13 @@ namespace CompetitionGame.Controllers
             _RRSelector = rRSelector;
         }
 
-        // GET: api/<Competition>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new List<string>();
-            //List<Team> teams = new List<Team>();
-            //HistoryLeagueStats historyLeagueStats;
-            //using (StreamReader r = new StreamReader("ExternalData.json"))
-            //{
-            //    var json = r.ReadToEnd();
-            //    var jsonObjects = JObject.Parse(json);
-            //    teams = jsonObjects["teams"].ToObject<List<Team>>();
-            //    historyLeagueStats = jsonObjects["historyleaguestats"].ToObject<HistoryLeagueStats>();
-            //}
-            //var request = RoundRobinFactory.CreateRoundRobinRequest(teams.Take(4).ToList(), historyLeagueStats);
-            //var result = _RRSelector.Handle(request);
-            //return (from res in result.matchResults
-            //        let matchresult = JsonConvert.SerializeObject(res)
-            //        select matchresult).ToList();
-        }
-
-            // POST api/<Competition>
-            [HttpPost]
+        // POST api/<Competition>
+        [HttpPost]
         public async Task<IEnumerable<string>> PostAsync()
         {
             var bodyRequest = Request.Body;
             string streamresult;
-            using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
+            using (StreamReader reader = new StreamReader(bodyRequest, Encoding.UTF8))
             {
                 streamresult = await reader.ReadToEndAsync();
             }
@@ -64,10 +43,21 @@ namespace CompetitionGame.Controllers
             var request = RoundRobinFactory.CreateRoundRobinRequest(teams.ToList(), historyLeagueStats);
             var result = _RRSelector.Handle(request);
 
-            return (from res in result.matchResults
-                    let matchresult = JsonConvert.SerializeObject(res)
-                    select matchresult).ToList();
 
+            var list = new List<string>();
+            foreach (var res in result.matchResults)
+            {
+                var matchresult = JsonConvert.SerializeObject(res, Formatting.Indented, new JsonSerializerSettings { ContractResolver = JsonContractResolvers.IgnoreIsSpecifiedMembersResolver, MaxDepth = 10 });
+                list.Add(matchresult);
+            }
+            foreach (var compscore in result.competitionScore)
+            {
+                var competitionscore = JsonConvert.SerializeObject(compscore, Formatting.Indented, new JsonSerializerSettings { ContractResolver = JsonContractResolvers.IgnoreIsSpecifiedMembersResolver, MaxDepth = 10 });
+                list.Add(competitionscore);
+            }
+
+
+            return list;
         }
     }
 }
