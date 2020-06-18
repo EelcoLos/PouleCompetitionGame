@@ -5,6 +5,7 @@ using CompetitionGame.Factories;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Linq;
+using CompetitionGame.Data.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -33,16 +34,23 @@ namespace CompetitionGame.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return (from team in cachedTeams
-                    let res = JsonConvert.SerializeObject(team)
-                    select res).ToList();
+            //return JsonConvert.SerializeObject(cachedTeams);
+            var list = new List<string>();
+            foreach (var team in cachedTeams)
+            {
+                var res = JsonConvert.SerializeObject(team);
+                //.Replace("\"", "")/*.Replace("","")*/
+                list.Add(res);
+            }
+
+            return list;
         }
 
         // GET api/<Teams>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return JsonConvert.SerializeObject(cachedTeams[id]);
+            return JsonConvert.SerializeObject(cachedTeams[id]).Replace("\"", "");
         }
     }
 }

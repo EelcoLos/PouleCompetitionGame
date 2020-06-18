@@ -1,4 +1,5 @@
 ﻿using CompetitionGame.Command;
+using CompetitionGame.Data.Models;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Text.Json;
 
-namespace CompetitionGame
+namespace CompetitionGame.Data.Models
 {
     public class Stats
     {

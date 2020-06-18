@@ -1,7 +1,5 @@
 ﻿using CompetitionGame.Command;
 using CompetitionGame.Data;
-using CompetitionGame.Models.Request;
-using CompetitionGame.Models.Result;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 

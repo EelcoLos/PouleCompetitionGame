@@ -1,4 +1,6 @@
-﻿namespace CompetitionGame.Command
+﻿using CompetitionGame.Data.Models;
+
+namespace CompetitionGame.Command
 {
     public class CalculatePotentialOutcomeRequest
     {

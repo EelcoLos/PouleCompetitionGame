@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using CompetitionGame.Command;
+using CompetitionGame.Data.Models;
 using CompetitionGame.Factories;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
@@ -28,6 +31,7 @@ namespace CompetitionGame.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            return new List<string>();
             //List<Team> teams = new List<Team>();
             //HistoryLeagueStats historyLeagueStats;
             //using (StreamReader r = new StreamReader("ExternalData.json"))
@@ -46,9 +50,15 @@ namespace CompetitionGame.Controllers
 
             // POST api/<Competition>
             [HttpPost]
-        public IEnumerable<string> Post([FromBody] string value)
+        public async Task<IEnumerable<string>> PostAsync()
         {
-            var jsonObjects = JObject.Parse(value);
+            var bodyRequest = Request.Body;
+            string streamresult;
+            using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
+            {
+                streamresult = await reader.ReadToEndAsync();
+            }
+            var jsonObjects = JObject.Parse(streamresult);
             var teams = jsonObjects["teams"].ToObject<List<Team>>();
             var historyLeagueStats = jsonObjects["historyleaguestats"].ToObject<HistoryLeagueStats>();
             var request = RoundRobinFactory.CreateRoundRobinRequest(teams.ToList(), historyLeagueStats);

@@ -1,9 +1,9 @@
-﻿using CompetitionGame.Factories;
+﻿using CompetitionGame.Data.Models;
+using CompetitionGame.Factories;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace CompetitionGame.Command
 {

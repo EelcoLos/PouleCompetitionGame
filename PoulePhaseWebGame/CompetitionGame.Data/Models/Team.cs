@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace CompetitionGame
+namespace CompetitionGame.Data.Models
 {
     public class Team
     {

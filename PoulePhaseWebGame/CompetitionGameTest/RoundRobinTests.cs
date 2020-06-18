@@ -1,5 +1,5 @@
-﻿using CompetitionGame;
-using CompetitionGame.Command;
+﻿using CompetitionGame.Command;
+using CompetitionGame.Data.Models;
 using CompetitionGame.Factories;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;

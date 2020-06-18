@@ -1,12 +1,10 @@
 ﻿using Autofac;
 using CompetitionGame.Command;
 using CompetitionGame.Data;
-using CompetitionGame.Decorators;
 using CompetitionGame.Evaluators;
 using CompetitionGame.Factories;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
-using Microsoft.Extensions.Logging;
 
 namespace CompetitionGame
 {

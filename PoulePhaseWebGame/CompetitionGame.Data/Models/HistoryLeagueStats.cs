@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace CompetitionGame
+namespace CompetitionGame.Data.Models
 {
     public class HistoryLeagueStats
     {

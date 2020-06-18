@@ -1,5 +1,4 @@
 ﻿using CompetitionGame.Data;
-using System;
 
 namespace CompetitionGame.Factories
 {

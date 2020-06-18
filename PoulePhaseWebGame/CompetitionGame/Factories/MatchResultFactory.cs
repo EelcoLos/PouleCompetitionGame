@@ -1,4 +1,5 @@
-﻿using CompetitionGame.Models.Request;
+﻿using CompetitionGame.Data.Models;
+using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
 using Microsoft.Extensions.Localization;
 using System.Collections.Generic;

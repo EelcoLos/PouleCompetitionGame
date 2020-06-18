@@ -1,8 +1,6 @@
-﻿
-using CompetitionGame.Command;
+﻿using CompetitionGame.Data.Models;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
-using System;
 using System.Collections.Generic;
 
 namespace CompetitionGame.Factories
