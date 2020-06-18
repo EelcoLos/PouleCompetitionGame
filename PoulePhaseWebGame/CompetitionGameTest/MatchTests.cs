@@ -1,5 +1,6 @@
 using CompetitionGame;
 using CompetitionGame.Command;
+using CompetitionGame.Evaluators;
 using CompetitionGame.Factories;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
@@ -18,7 +19,7 @@ namespace CompetitionGameTest
         public void PlayMatchWithOneTeam()
         {
             SetupFootballMatchTests(out List<Team> teams, out FootballMatchFactory matchFactory, out HistoryLeagueStats leagueStats);
-            var potentialOutcomeCalculator = new PoissonPotentialOutcomeCalculator();
+            var potentialOutcomeCalculator = new PoissonPotentialOutcomeCalculator(new PoissonEvaluator(), new PoissonEvaluator());
             var match = new MatchHandler(matchFactory, potentialOutcomeCalculator);
             MatchRequest matchRequest = matchFactory.CreateRequest(new List<Team> { teams.FirstOrDefault() }, leagueStats);
             var result = match.Handle(matchRequest);
@@ -33,7 +34,7 @@ namespace CompetitionGameTest
         public void PlayNormalMatch()
         {
             SetupFootballMatchTests(out List<Team> teams, out FootballMatchFactory matchFactory, out HistoryLeagueStats leagueStats);
-            var potentialOutcomeCalculator = new PoissonPotentialOutcomeCalculator();
+            var potentialOutcomeCalculator = new PoissonPotentialOutcomeCalculator(new PoissonEvaluator(), new PoissonEvaluator());
 
             var match = new MatchHandler(matchFactory, potentialOutcomeCalculator);
             MatchRequest matchRequest = matchFactory.CreateRequest(teams, leagueStats);

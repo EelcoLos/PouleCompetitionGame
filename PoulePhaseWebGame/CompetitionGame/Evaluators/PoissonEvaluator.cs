@@ -2,11 +2,11 @@
 
 namespace CompetitionGame.Evaluators
 {
-    public class PoissonEvaluator
+    public class PoissonEvaluator : IPoissonEvaluator
     {
         decimal lambda;
 
-        public PoissonEvaluator(decimal lambda = 1.0M)
+        public void SetLambda(decimal lambda = 1.0M)
         {
             this.lambda = lambda;
         }

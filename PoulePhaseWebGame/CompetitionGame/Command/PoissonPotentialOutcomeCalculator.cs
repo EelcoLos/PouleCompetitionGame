@@ -6,10 +6,13 @@ namespace CompetitionGame.Command
     public class PoissonPotentialOutcomeCalculator : ICommandHandler<CalculatePotentialOutcomeRequest, CalculatePotentialOutcomeResult>
     {
         private decimal probabilityLimit;
+        IPoissonEvaluator evalHome, evalAway;
 
-        public PoissonPotentialOutcomeCalculator(decimal ProbabilityLimit = 0.15M)
+        public PoissonPotentialOutcomeCalculator(IPoissonEvaluator EvalHome, IPoissonEvaluator EvalAway, decimal ProbabilityLimit = 0.15M)
         {
             probabilityLimit = ProbabilityLimit;
+            evalHome = EvalHome;
+            evalAway = EvalAway;
         }
 
         public CalculatePotentialOutcomeResult Handle(CalculatePotentialOutcomeRequest request)
@@ -21,9 +24,8 @@ namespace CompetitionGame.Command
             // Away team attack strength *home team defence strength* average number of away goals
             var projectedAwayTeamGoals = request.awayTeam.AwayStats.AttackStrength * request.homeTeam.HomeStats.DefenseStrength * request.AverageAwayGoals;
 
-            var evalHome = new PoissonEvaluator(Convert.ToDecimal(projectedHomeTeamGoals));
-            var evalAway = new PoissonEvaluator(Convert.ToDecimal(projectedAwayTeamGoals));
-//            var potentialOutcomes = new List<(Team hometeam, int homescore, Team awayteam, int awayscore)>();
+            evalHome.SetLambda(Convert.ToDecimal(projectedHomeTeamGoals));
+            evalAway.SetLambda(Convert.ToDecimal(projectedAwayTeamGoals));
 
             for (int j = 0; j < 6; j++)
             {
