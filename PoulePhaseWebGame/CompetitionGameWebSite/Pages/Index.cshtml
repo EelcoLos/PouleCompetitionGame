@@ -1,0 +1,112 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Round Robin Poule Simulator</h1>
+    <p class="text-left">
+        This is a simulator of the Eredivisie, using statistics of the year 2018/2019.
+        Below you'll see a set of strengths and defenses, all calculated via the <link href="https://help.smarkets.com/hc/en-gb/articles/115001457989-How-to-calculate-Poisson-distribution-for-football-betting">Poission distribution</link> setup. <br />
+        For example, Ajax made 70 goals at home, during 17 home games, which results in 70<span>&#247;</span>17 = 4,1176470588235294117647058823529 as "Home Attack Strength".
+        This is done with all the teams in regards to:
+        <ol>
+            <li>Home Attack Strength (Home Goals made <span>&#247;</span> Home matches</li>
+            <li>Home Defense Strength (Home Goals against <span>&#247;</span> Home matches</li>
+            <li>Away Attack Strength (Home Goals made <span>&#247;</span> Away matches</li>
+            <li>Away Defense Strength (Home Goals against <span>&#247;</span> Away matches</li>
+        </ol>
+    </p>
+    <p class="text-left">
+        In this poule setup, teams that are matched are getting their home and away strengths matched: A Home team can score as strong as the defenses' away team defense strength and visa versa.<br />
+        Select an even number of teams (4 by default) and press 'Simulate' to use the competition simulator!
+    </p>
+    </p>
+    <div>
+        <form id="simulatePanel" class="simulation" asp-page-handler="Simulate" method="post">
+            <div class="teams">
+                <table align="center">
+                    <tr>
+                        <th></th>
+                        <th>Team Name</th>
+                        <th>Home Attack Strength</th><th>Home Defense Strength</th><th>Away Attack Strength</th><th>Away Defense Strength</th>
+                    </tr>
+                    @for (int i = 0; i < Model.jsonobjects.Count; i++)
+                    {
+                        var tmp = "[" + i + "].AreChecked";
+                        var defaultcheck = i >= 0 && i < 4 ? true : false;
+                        var obj = Model.jsonobjects[i];
+                    <tr>
+                        <td>
+                            <input class="teamSelect" name="AreChecked" id="@tmp" type="checkbox" value="@i" checked="@defaultcheck" />
+                        </td>
+                        <td align="left"><input name="jsonObj" type="hidden" id="@i" value="@obj" />@obj["teamName"].ToString()</td>
+                        <td>@obj["homeStats"]["AttackStrength"]</td>
+                        <td>@obj["homeStats"]["DefenseStrength"]</td>
+                        <td>@obj["awayStats"]["AttackStrength"]</td>
+                        <td>@obj["awayStats"]["DefenseStrength"]</td>
+                    </tr>
+                    }
+                </table>
+            </div>
+            <div class="stats">
+                <h2>Global statistics</h2>
+                <table align="center" title="League Statistics">
+                    @foreach (var obj in Model.leagueStatsDynamic)
+                    {
+                        <tr>
+                            <td>@obj.Key</td>
+                            <td>@obj.Value</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+            <button id="simulateTeams" class="btn btn-primary" type="submit">Simulate</button>
+        </form>
+    </div>
+    @if (Model.showScorePanel)
+    {
+        <div id="scorePanel">
+            <div class="Results">
+                <h2>Poule matches</h2>
+                <table>
+                    @foreach (var pouleresult in Model.apiResults)
+                    {
+                        <tr>
+                            <td align="left">@pouleresult["ToString"]</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+
+            <div class="Compstats">
+                <h2>Competition Results</h2>
+                <table>
+                    <tr>
+                        <th>Team Name</th>
+                        <th>Poule Points</th>
+                        <th>Goals For</th>
+                        <th>Goals Against</th>
+                        <th>Goal Difference</th>
+                    </tr>
+                    @foreach (var pouleresult in Model.apiResults)
+                    {
+
+                        @if (pouleresult.ContainsKey("Key"))
+                        {
+                            <tr>
+                                <td align="left">@pouleresult["Key"]["teamName"]</td>
+                                <td>@pouleresult["Value"]["pouleStance"]</td>
+                                <td>@pouleresult["Value"]["goalsFor"]</td>
+                                <td>@pouleresult["Value"]["goalsAgainst"]</td>
+                                <td>@pouleresult["Value"]["goalDifference"]</td>
+                            </tr>
+                        }
+                    }
+                </table>
+            </div>
+        </div>
+    }
+</div>

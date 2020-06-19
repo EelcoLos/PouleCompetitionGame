@@ -1,5 +1,5 @@
-﻿using CompetitionGame;
-using CompetitionGame.Command;
+﻿using CompetitionGame.Command;
+using CompetitionGame.Data.Models;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
 using Microsoft.Extensions.Localization;

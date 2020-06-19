@@ -1,9 +1,9 @@
-﻿using CompetitionGame.Factories;
+﻿using CompetitionGame.Data.Models;
+using CompetitionGame.Factories;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace CompetitionGame.Command
 {
@@ -23,9 +23,8 @@ namespace CompetitionGame.Command
         public RoundRobinResult Handle(RoundRobinRequest request)
         {
             List<List<Team>> tournamentList = ConstructTournamentList(request);
-            List<MatchResult> matchResults = new List<MatchResult>();
-            PlayTournament(request, tournamentList, matchResults);
-            var result = RoundRobinFactory.CreateResult(matchResults);
+            var matchResults = PlayTournament(request, tournamentList);
+            var result = RoundRobinFactory.CreateResult(matchResults, request);
 
             return result;
         }
@@ -48,13 +47,15 @@ namespace CompetitionGame.Command
         /// <param name="request"></param>
         /// <param name="tournamentList"></param>
         /// <param name="matchResults"></param>
-        private void PlayTournament(RoundRobinRequest request, List<List<Team>> tournamentList, List<MatchResult> matchResults)
+        private List<MatchResult> PlayTournament(RoundRobinRequest request, List<List<Team>> tournamentList)
         {
+            List<MatchResult> matchResults = new List<MatchResult>();
             foreach (var matchup in tournamentList)
             {
                 var matchrequest = _matchFactory.CreateRequest(matchup, request.stats);
                 matchResults.Add(_matchCommand.Handle(matchrequest));
             }
+            return matchResults;
         }
 
         private List<List<Team>> GenerateRoundRobin(List<Team> ListTeam)

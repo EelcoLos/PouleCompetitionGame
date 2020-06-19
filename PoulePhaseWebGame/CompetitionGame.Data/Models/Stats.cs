@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Text.Json;
 
-namespace CompetitionGame
+namespace CompetitionGame.Data.Models
 {
     public class Stats
     {
@@ -12,8 +12,8 @@ namespace CompetitionGame
         [JsonProperty("goalsConceded")]
         public int GoalsConceded;
 
-        public decimal AttackStrength =>  (decimal)GoalsMade / (decimal)GamesPlayed;
-        public decimal DefenseStrength => (decimal)GoalsConceded / (decimal)GamesPlayed;
+        public float AttackStrength => (float)GoalsMade / (float)GamesPlayed;
+        public float DefenseStrength => (float)GoalsConceded / (float)GamesPlayed;
     }
 
 }

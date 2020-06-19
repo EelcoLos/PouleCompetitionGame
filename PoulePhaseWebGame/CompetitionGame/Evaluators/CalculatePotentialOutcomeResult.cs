@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using CompetitionGame.Data.Models;
+using System.Collections.Generic;
 
 namespace CompetitionGame.Evaluators
 {

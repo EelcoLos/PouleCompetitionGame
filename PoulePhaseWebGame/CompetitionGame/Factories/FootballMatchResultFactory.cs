@@ -1,4 +1,5 @@
-﻿using CompetitionGame.Models.Result;
+﻿using CompetitionGame.Data.Models;
+using CompetitionGame.Models.Result;
 using Microsoft.Extensions.Localization;
 
 namespace CompetitionGame.Factories

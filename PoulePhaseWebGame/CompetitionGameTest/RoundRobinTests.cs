@@ -1,5 +1,5 @@
-﻿using CompetitionGame;
-using CompetitionGame.Command;
+﻿using CompetitionGame.Command;
+using CompetitionGame.Data.Models;
 using CompetitionGame.Factories;
 using CompetitionGame.Models.Request;
 using CompetitionGame.Models.Result;
@@ -47,7 +47,7 @@ namespace CompetitionGameTest
                 Assert.IsTrue(result.matchResults[0].Scores[TeamA] == 1);
                 Assert.IsTrue(result.matchResults[0].Scores[TeamB] == 0);
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 Assert.Fail("Round 1 didn't have the correct teams: Team A v.Team B");
             }
@@ -58,7 +58,7 @@ namespace CompetitionGameTest
                 Assert.IsTrue(result.matchResults[1].Scores[TeamC] == 1);
                 Assert.IsTrue(result.matchResults[1].Scores[TeamD] == 0);
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 Assert.Fail("Round 1 didn't have the correct teams: Team C v.Team D");
             }
@@ -69,7 +69,7 @@ namespace CompetitionGameTest
                 Assert.IsTrue(result.matchResults[2].Scores[TeamC] == 1);
                 Assert.IsTrue(result.matchResults[2].Scores[TeamA] == 0);
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 Assert.Fail("Round 2 didn't have the correct teams: Team C v.Team A");
             }
@@ -80,7 +80,7 @@ namespace CompetitionGameTest
                 Assert.IsTrue(result.matchResults[3].Scores[TeamD] == 1);
                 Assert.IsTrue(result.matchResults[3].Scores[TeamB] == 0);
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 Assert.Fail("Round 2 didn't have the correct teams: Team D v.Team B");
             }
@@ -91,7 +91,7 @@ namespace CompetitionGameTest
                 Assert.IsTrue(result.matchResults[4].Scores[TeamA] == 1);
                 Assert.IsTrue(result.matchResults[4].Scores[TeamD] == 0);
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 Assert.Fail("Round 3 didn't have the correct teams: Team A v.Team D");
             }
@@ -102,7 +102,7 @@ namespace CompetitionGameTest
                 Assert.IsTrue(result.matchResults[5].Scores[TeamB] == 1);
                 Assert.IsTrue(result.matchResults[5].Scores[TeamC] == 0);
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 Assert.Fail("Round 3 didn't have the correct teams: Team B v.Team C");
             }
