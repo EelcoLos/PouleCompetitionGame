@@ -1,0 +1,1732 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2020-06-19T16:26:51.322+02:00
+  initializedAtString: 2020-06-19T16:24:22.273+02:00
+  log:
+  - commitID: 024bf8ada83ce3835b88c6af8c7f36e210d5e53f
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Mutual Result rule added
+    description: 
+    timeString: 2020-06-19T13:25:48.000+02:00
+    commitTimeString: 2020-06-19T13:25:48.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\CompetitionNumbers.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\CompetitionNumbers.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\CompetitionNumbers.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: e95484ae005e6a23b84110378eda062d261f547e
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Added Doelsaldo
+    description: 
+    timeString: 2020-06-19T11:25:53.000+02:00
+    commitTimeString: 2020-06-19T11:25:53.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 2dd693b2c769d53b97a3a09956444349bd05f1cf
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: typo in descriptive text
+    description: 
+    timeString: 2020-06-19T11:08:35.000+02:00
+    commitTimeString: 2020-06-19T11:08:35.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 116a7935413a82dd86ce2a4460ccb878f17cfb66
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Simulate only even teams
+    description: 'only even selection of team support.
+
+      Also some content
+      regarding this program added'
+    timeString: 2020-06-19T11:03:37.000+02:00
+    commitTimeString: 2020-06-19T11:03:37.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\js\site.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\js\site.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\js\site.js
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 03f3313866a1c3de1532c4db0ed56cd17702e6e9
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: styling + calculation fix
+    description: 'calculator didn''t get the proper floats, forced everything float
+      now
+
+      fixes #5'
+    timeString: 2020-06-19T10:07:24.000+02:00
+    commitTimeString: 2020-06-19T10:28:20.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame.Data\Models\Stats.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame.Data\Models\Stats.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame.Data\Models\Stats.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeRequest.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\CompetitionNumbers.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\CompetitionNumbers.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\CompetitionNumbers.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\css\site.css
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\css\site.css
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\css\site.css
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 2ba1123f9061aa38c5395d1d7ba3660a18297101
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Added Competition Stats
+    description: The sorting is still a WIP, but the competitionstats are accessible
+    timeString: 2020-06-18T23:08:58.000+02:00
+    commitTimeString: 2020-06-18T23:08:58.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\JsonContractResolvers.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\JsonContractResolvers.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\JsonContractResolvers.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\CompetitionNumbers.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\CompetitionNumbers.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\CompetitionNumbers.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Properties\launchSettings.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Properties\launchSettings.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Properties\launchSettings.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: cc0e3ff901f1cbc298f317d1a52915cd8bfb025e
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: First draft website creation.
+    description: whole roundtrip works
+    timeString: 2020-06-18T20:27:07.000+02:00
+    commitTimeString: 2020-06-18T20:27:07.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\.dockerignore
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\.dockerignore
+      projectPath: ..\PoulePhaseWebGame\.dockerignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame.Data\CompetitionGame.Data.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame.Data\CompetitionGame.Data.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame.Data\CompetitionGame.Data.csproj
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame.Data\Models\HistoryLeagueStats.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame.Data\Models\HistoryLeagueStats.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame.Data\Models\HistoryLeagueStats.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\HistoryLeagueStats.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame.Data\Models\Stats.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame.Data\Models\Stats.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame.Data\Models\Stats.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\Stats.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame.Data\Models\Team.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame.Data\Models\Team.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame.Data\Models\Team.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame.sln
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame.sln
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame.sln
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Composition.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Composition.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Composition.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\HistoryStatsController.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\HistoryStatsController.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\HistoryStatsController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\TeamsController.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\TeamsController.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\TeamsController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\WeatherForecastController.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\WeatherForecastController.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\WeatherForecastController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Data\ExternalDataService.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Data\ExternalDataService.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Data\ExternalDataService.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Decorators\StopwatchDecorator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Decorators\StopwatchDecorator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Decorators\StopwatchDecorator.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeRequest.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeResult.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\CalculatePotentialOutcomeFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\CalculatePotentialOutcomeFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\CalculatePotentialOutcomeFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\DataRequestFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\DataRequestFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\DataRequestFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\FootballMatchResultFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\FootballMatchResultFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\FootballMatchResultFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\MatchResultFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\MatchResultFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\MatchResultFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Request\MatchRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Request\MatchRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Request\MatchRequest.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Request\RoundRobinRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Request\RoundRobinRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Request\RoundRobinRequest.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\MatchResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\MatchResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\MatchResult.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\CompetitionGameWebSite.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\CompetitionGameWebSite.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\CompetitionGameWebSite.csproj
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Dockerfile
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Dockerfile
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Dockerfile
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Error.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Error.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Error.cshtml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Error.cshtml.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Error.cshtml.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Error.cshtml.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Index.cshtml.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Privacy.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Privacy.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Privacy.cshtml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Privacy.cshtml.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Privacy.cshtml.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Privacy.cshtml.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Shared\_Layout.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Shared\_Layout.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Shared\_Layout.cshtml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\Shared\_ValidationScriptsPartial.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Shared\_ValidationScriptsPartial.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\Shared\_ValidationScriptsPartial.cshtml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\_ViewImports.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\_ViewImports.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\_ViewImports.cshtml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Pages\_ViewStart.cshtml
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Pages\_ViewStart.cshtml
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Pages\_ViewStart.cshtml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Program.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Program.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Program.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Properties\launchSettings.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Properties\launchSettings.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Properties\launchSettings.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\Startup.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\Startup.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\Startup.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\appsettings.Development.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\appsettings.Development.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\appsettings.Development.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\appsettings.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\appsettings.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\appsettings.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\css\site.css
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\css\site.css
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\css\site.css
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\favicon.ico
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\favicon.ico
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\favicon.ico
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\js\site.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\js\site.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\js\site.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\LICENSE
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\LICENSE
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\LICENSE
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\LICENSE.md
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\LICENSE.md
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\LICENSE.md
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\additional-methods.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\additional-methods.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\additional-methods.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\LICENSE.txt
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\LICENSE.txt
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\LICENSE.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\dist\jquery.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\dist\jquery.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\dist\jquery.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\dist\jquery.min.js
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\dist\jquery.min.js
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\dist\jquery.min.js
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\dist\jquery.min.map
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\dist\jquery.min.map
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameWebSite\wwwroot\lib\jquery\dist\jquery.min.map
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: e9223cfa97f64758fe7a48ad2eb1dc692c9824a3
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: '[WIP]setup for api controllers'
+    description: Setting up api access
+    timeString: 2020-06-18T12:59:15.000+02:00
+    commitTimeString: 2020-06-18T12:59:15.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Composition.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Composition.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Composition.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\HistoryStatsController.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\HistoryStatsController.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\HistoryStatsController.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\TeamsController.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\TeamsController.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\TeamsController.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Data\ExternalDataService.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Data\ExternalDataService.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Data\ExternalDataService.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\ExternalData.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\ExternalData.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\ExternalData.json
+      originalPath: PoulePhaseWebGame\CompetitionGame\Data\ExternalData.json
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\DataRequestFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\DataRequestFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\DataRequestFactory.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Properties\launchSettings.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Properties\launchSettings.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Properties\launchSettings.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Startup.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Startup.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Startup.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: e5fde809d5eb271e91f8f1e40cac5c282eff141b
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Added Composition + updates
+    description: Tweaks on PoissonEvaluator. Added Composition
+    timeString: 2020-06-18T10:32:08.000+02:00
+    commitTimeString: 2020-06-18T10:32:08.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Composition.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Composition.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Composition.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\Competition.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Data\Dataclient.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Data\Dataclient.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Data\Dataclient.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Data\ExternalData.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Data\ExternalData.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Data\ExternalData.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Data\ExternalDataService.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Data\ExternalDataService.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Data\ExternalDataService.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Decorators\StopwatchDecorator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Decorators\StopwatchDecorator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Decorators\StopwatchDecorator.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Evaluators\IPoissonEvaluator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Evaluators\IPoissonEvaluator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Evaluators\IPoissonEvaluator.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Evaluators\PoissonEvaluator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Evaluators\PoissonEvaluator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Evaluators\PoissonEvaluator.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\PoissonEvaluator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\PoissonEvaluator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\PoissonEvaluator.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Program.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Program.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Program.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Startup.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Startup.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Startup.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: d0a3f40f2a9e0cea67be2a2485d9ed3fa9ad8f3e
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Updated package + AutoFac
+    description: 
+    timeString: 2020-06-18T09:04:00.000+02:00
+    commitTimeString: 2020-06-18T09:04:00.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: e572a3e5207834816ff765b2e18a7bdf8a4e93e6
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: removed unnecessary exception variable
+    description: 
+    timeString: 2020-06-17T22:47:41.000+02:00
+    commitTimeString: 2020-06-17T22:47:41.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: e2f48cc5d9c02e1e6cda2eda5a58853f9b6cf54d
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Fixed issue #3
+    description: added round robin tests to the league test.
+    timeString: 2020-06-17T22:35:11.000+02:00
+    commitTimeString: 2020-06-17T22:35:11.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs~Stashed changes
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs~Stashed
+        changes
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs~Stashed
+        changes
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+  - commitID: a000884f09bae81c799990aaa72bd2d2a14bd016
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Belated changes
+    description: 
+    timeString: 2020-06-17T10:48:16.000+02:00
+    commitTimeString: 2020-06-17T10:48:16.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeResult.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+  - commitID: 0e1c303f6e403c5c43f5b51f2febbbc92e38672a
+    mergeA: 76717d278d9738db81588032b340f5a39afebc37
+    mergeB: 9be9cddfc362ccf03f0f50b8dd16b0b6d00cf028
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: merged from simulation4teams branch
+    description: 
+    timeString: 2020-06-17T10:47:49.000+02:00
+    commitTimeString: 2020-06-17T10:47:49.000+02:00
+    changes: []
+  - commitID: 76717d278d9738db81588032b340f5a39afebc37
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: issues with creating branch from master initial
+    description: 
+    timeString: 2020-06-17T10:14:25.000+02:00
+    commitTimeString: 2020-06-17T10:14:25.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame.sln
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame.sln
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame.sln
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeRequest.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Evaluators\CalculatePotentialOutcomeResult.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Evaluators\PoissonEvaluator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Evaluators\PoissonEvaluator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Evaluators\PoissonEvaluator.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\CompetitionGameTest.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\CompetitionGameTest.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\CompetitionGameTest.csproj
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs~Stashed changes
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs~Stashed
+        changes
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs~Stashed
+        changes
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 9be9cddfc362ccf03f0f50b8dd16b0b6d00cf028
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: updated tests to handle roundrobin schedule
+    description: 
+    timeString: 2020-06-16T19:27:33.000+02:00
+    commitTimeString: 2020-06-16T19:27:33.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 6ef8de4dc276c98b54533c761fc8f36d9c4ebc5e
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Updated TestData with
+    description: All correct data from 2018/2019 is now in
+    timeString: 2020-06-16T19:03:39.000+02:00
+    commitTimeString: 2020-06-16T19:03:39.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 112772313a8b9e3e6446b1d5a75a85d342815cc3
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Updated RoundRobin to work properly with multiple teams
+    description: Updated Testdata, still need to adjust the stats of the testdata
+    timeString: 2020-06-16T17:09:20.000+02:00
+    commitTimeString: 2020-06-16T17:09:20.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\MatchResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\MatchResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\MatchResult.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 6980300b2e09d9259308b29b9c3e1f8c104f227e
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: RoundRobinTournament Selection Initial
+    description: Added RoundRobin, first draft. Not complete
+    timeString: 2020-06-16T15:21:14.000+02:00
+    commitTimeString: 2020-06-16T15:21:14.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\Command\ICommandHandler.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\ICommandHandler.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\ICommandHandler.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\ICommandHandler.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\Match.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\Match.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\PoissonPotentialOutcomeCalculator.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\PoissonPotentialOutcomeCalculator.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Command\RoundRobinTournamentSelector.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Decorators\Decorator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Decorators\Decorator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Decorators\Decorator.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Decorators\StopwatchDecorator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Decorators\StopwatchDecorator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Decorators\StopwatchDecorator.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\CalculatePotentialOutcomeFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\CalculatePotentialOutcomeFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\CalculatePotentialOutcomeFactory.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeFactory.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\FootballMatchResultFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\FootballMatchResultFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\FootballMatchResultFactory.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\FootballMatchResultFactory.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\MatchResultFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\MatchResultFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\MatchResultFactory.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\MatchResultFactory.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Factories\RoundRobinFactory.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Request\MatchRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Request\MatchRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Request\MatchRequest.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\MatchRequest.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Request\RoundRobinRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Request\RoundRobinRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Request\RoundRobinRequest.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\MatchResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\MatchResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\MatchResult.cs
+      originalPath: PoulePhaseWebGame\CompetitionGame\Models\MatchResult.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Result\RoundRobinResult.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\FakeMatchTest.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\RoundRobinTests.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: e200f939dcf76933ca9719816c0c214893fbae04
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Fixed the broken project
+    description: json ill-formatted, fixed that, worked out some statistics
+    timeString: 2020-06-15T17:25:05.000+02:00
+    commitTimeString: 2020-06-15T17:25:05.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeRequest.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\PoissonEvaluator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\PoissonEvaluator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\PoissonEvaluator.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\PoissonPotentialOutcomeCalculator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\PoissonPotentialOutcomeCalculator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\PoissonPotentialOutcomeCalculator.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: fe61fbe11831d09290e7bb80a332d0d7ee2bd863
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: '[WIP]Changed structure to more SOLID'
+    description: 'Note: the conversion of JSON Teams doesn''t work'
+    timeString: 2020-06-15T12:39:22.000+02:00
+    commitTimeString: 2020-06-15T12:39:22.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeFactory.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeRequest.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\CalculatePotentialOutcomeResult.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\FootballMatchResultFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\FootballMatchResultFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\FootballMatchResultFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\HistoryLeagueStats.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\HistoryLeagueStats.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\HistoryLeagueStats.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\ICommandHandler.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\ICommandHandler.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\ICommandHandler.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Match.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Match.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Match.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\MatchRequest.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\MatchRequest.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\MatchRequest.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\MatchResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\MatchResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\MatchResult.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\MatchResultFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\MatchResultFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\MatchResultFactory.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\PoissonPotentialOutcomeCalculator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\PoissonPotentialOutcomeCalculator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\PoissonPotentialOutcomeCalculator.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Stats.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Stats.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Stats.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\CompetitionGameTest.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\CompetitionGameTest.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\CompetitionGameTest.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\TestData.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 829d102c5c8409338c12fd1139c02b321a0e21f9
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Initial Simulation of the PouleGame. Ties and forfeits accounted for
+    description: 
+    timeString: 2020-06-14T19:28:52.000+02:00
+    commitTimeString: 2020-06-14T19:28:52.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame.sln
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame.sln
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame.sln
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\FootballMatchResultFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\FootballMatchResultFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\FootballMatchResultFactory.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Match.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Match.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Match.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\MatchResult.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\MatchResult.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\MatchResult.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\MatchResultFactory.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\MatchResultFactory.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\MatchResultFactory.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\PoissonEvaluator.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\PoissonEvaluator.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\PoissonEvaluator.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Stats.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Stats.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Stats.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Models\Team.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\CompetitionGameTest.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\CompetitionGameTest.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\CompetitionGameTest.csproj
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGameTest\MatchTests.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 05bcc1891bcefad3098eb334dab93363538be788
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Move the game into a subfolder
+    description: 
+    timeString: 2020-06-14T13:26:59.000+02:00
+    commitTimeString: 2020-06-14T13:26:59.000+02:00
+    changes:
+    - path: PoulePhaseWebGame\CompetitionGame.sln
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame.sln
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame.sln
+      originalPath: CompetitionGame.sln
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\CompetitionGame.csproj
+      originalPath: CompetitionGame\CompetitionGame.csproj
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Controllers\WeatherForecastController.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Controllers\WeatherForecastController.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Controllers\WeatherForecastController.cs
+      originalPath: CompetitionGame\Controllers\WeatherForecastController.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Dockerfile
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Dockerfile
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Dockerfile
+      originalPath: CompetitionGame\Dockerfile
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Program.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Program.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Program.cs
+      originalPath: CompetitionGame\Program.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Properties\launchSettings.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Properties\launchSettings.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Properties\launchSettings.json
+      originalPath: CompetitionGame\Properties\launchSettings.json
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\Startup.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\Startup.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\Startup.cs
+      originalPath: CompetitionGame\Startup.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\WeatherForecast.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\WeatherForecast.cs
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\WeatherForecast.cs
+      originalPath: CompetitionGame\WeatherForecast.cs
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\appsettings.Development.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\appsettings.Development.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\appsettings.Development.json
+      originalPath: CompetitionGame\appsettings.Development.json
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: PoulePhaseWebGame\CompetitionGame\appsettings.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\PoulePhaseWebGame\CompetitionGame\appsettings.json
+      projectPath: ..\PoulePhaseWebGame\CompetitionGame\appsettings.json
+      originalPath: CompetitionGame\appsettings.json
+      indexStatus: 6
+      workTreeStatus: 0
+  - commitID: 276abd5350287f29d7b4ffb605f0ef7d43d398bd
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Add project files.
+    description: 
+    timeString: 2020-06-14T13:15:40.000+02:00
+    commitTimeString: 2020-06-14T13:15:40.000+02:00
+    changes:
+    - path: .dockerignore
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\.dockerignore
+      projectPath: ..\.dockerignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame.sln
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame.sln
+      projectPath: ..\CompetitionGame.sln
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame\CompetitionGame.csproj
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame\CompetitionGame.csproj
+      projectPath: ..\CompetitionGame\CompetitionGame.csproj
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame\Controllers\WeatherForecastController.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame\Controllers\WeatherForecastController.cs
+      projectPath: ..\CompetitionGame\Controllers\WeatherForecastController.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame\Dockerfile
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame\Dockerfile
+      projectPath: ..\CompetitionGame\Dockerfile
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame\Program.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame\Program.cs
+      projectPath: ..\CompetitionGame\Program.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame\Properties\launchSettings.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame\Properties\launchSettings.json
+      projectPath: ..\CompetitionGame\Properties\launchSettings.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame\Startup.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame\Startup.cs
+      projectPath: ..\CompetitionGame\Startup.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame\WeatherForecast.cs
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame\WeatherForecast.cs
+      projectPath: ..\CompetitionGame\WeatherForecast.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame\appsettings.Development.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame\appsettings.Development.json
+      projectPath: ..\CompetitionGame\appsettings.Development.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: CompetitionGame\appsettings.json
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\CompetitionGame\appsettings.json
+      projectPath: ..\CompetitionGame\appsettings.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 62d429a244e146ee3dd4ae092bbf974d7ede4a5d
+    mergeA: 
+    mergeB: 
+    authorName: Eelco Los
+    authorEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitEmail: 5102501+EelcoLos@users.noreply.github.com
+    commitName: Eelco Los
+    summary: Add .gitignore and .gitattributes.
+    description: 
+    timeString: 2020-06-14T13:15:13.000+02:00
+    commitTimeString: 2020-06-14T13:15:13.000+02:00
+    changes:
+    - path: .gitattributes
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\.gitattributes
+      projectPath: ..\.gitattributes
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: .gitignore
+      fullPath: C:\Users\Speedy\Source\Repos\CompetitionGame\.gitignore
+      projectPath: ..\.gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
