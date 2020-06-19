@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-06-19T16:29:25.008+02:00
-  initializedAtString: 2020-06-19T16:29:25.008+02:00
+  lastUpdatedAtString: 2020-06-19T16:33:53.845+02:00
+  initializedAtString: 2020-06-19T16:32:29.007+02:00
   currentGitRemote:
     name: origin
     url: https://github.com/EelcoLos/PouleCompetitionGame.git
@@ -25,13 +25,13 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: UnityCreation
-    tracking: 
+    tracking: origin/UnityCreation
   currentConfigBranch:
     name: UnityCreation
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/EelcoLos/PouleCompetitionGame.git
+    trackingBranch: UnityCreation
   currentConfigRemote:
     name: origin
     url: https://github.com/EelcoLos/PouleCompetitionGame.git

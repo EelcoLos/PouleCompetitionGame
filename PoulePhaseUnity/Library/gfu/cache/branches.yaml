@@ -13,21 +13,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-06-19T16:25:38.819+02:00
-  initializedAtString: 2020-06-19T16:24:40.652+02:00
+  lastUpdatedAtString: 2020-06-19T16:33:53.852+02:00
+  initializedAtString: 2020-06-19T16:33:19.765+02:00
   localBranches:
   - name: master
     tracking: origin/master
   - name: SimulateMatch4Teams
     tracking: origin/SimulateMatch4Teams
   - name: UnityCreation
-    tracking: 
+    tracking: origin/UnityCreation
   - name: WebSiteCreation
     tracking: origin/WebSiteCreation
   remoteBranches:
   - name: origin/master
     tracking: '[None]'
   - name: origin/SimulateMatch4Teams
+    tracking: '[None]'
+  - name: origin/UnityCreation
     tracking: '[None]'
   - name: origin/WebSiteCreation
     tracking: '[None]'
@@ -58,9 +60,9 @@ MonoBehaviour:
       trackingBranch: SimulateMatch4Teams
     - name: UnityCreation
       remote:
-        name: 
-        url: 
-      trackingBranch: 
+        name: origin
+        url: https://github.com/EelcoLos/PouleCompetitionGame.git
+      trackingBranch: UnityCreation
     - name: WebSiteCreation
       remote:
         name: origin
@@ -73,6 +75,7 @@ MonoBehaviour:
     - Values:
       - master
       - SimulateMatch4Teams
+      - UnityCreation
       - WebSiteCreation
     subKeyValues:
     - Values:
@@ -82,6 +85,11 @@ MonoBehaviour:
           url: https://github.com/EelcoLos/PouleCompetitionGame.git
         trackingBranch: 
       - name: SimulateMatch4Teams
+        remote:
+          name: origin
+          url: https://github.com/EelcoLos/PouleCompetitionGame.git
+        trackingBranch: 
+      - name: UnityCreation
         remote:
           name: origin
           url: https://github.com/EelcoLos/PouleCompetitionGame.git
