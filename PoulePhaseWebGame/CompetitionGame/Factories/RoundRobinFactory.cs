@@ -17,6 +17,7 @@ namespace CompetitionGame.Factories
                 matchResults = MatchResults,
                 competitionScore = new Dictionary<Team, CompetitionNumbers>()
             };
+
             foreach (var match in MatchResults)
             {
                 Team homeTeam = match.Scores.First().Key;
@@ -40,8 +41,16 @@ namespace CompetitionGame.Factories
                 result.competitionScore[homeTeam].goalsAgainst += match.Scores[awayTeam];
                 result.competitionScore[awayTeam].goalsFor += match.Scores[awayTeam];
                 result.competitionScore[awayTeam].goalsAgainst += match.Scores[homeTeam];
-                result.competitionScore.OrderByDescending(x => x.Value.pouleStance).ToList();
+                result.competitionScore[awayTeam].goalsAwayWeighted += match.Scores[awayTeam] * 2;
             }
+            // whether toDictionary should be x.value or x.key is not relevant, either should suffice. Using linq, you have to recreate a dictionary all over again, sadly.
+            var sortedDict = result.competitionScore.OrderByDescending(x => x.Value.pouleStance).ThenByDescending(x=> x.Value.goalsFor).ThenByDescending(x => x.Value.goalsAwayWeighted).ToDictionary(x => x.Value).Values;
+            var newSortedDict = new Dictionary<Team, CompetitionNumbers>();
+            foreach (var item in sortedDict)
+            {
+                newSortedDict.Add(item.Key, item.Value);
+            }
+            result.competitionScore = newSortedDict;
             return result;
         }
     }

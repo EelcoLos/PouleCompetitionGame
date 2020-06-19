@@ -12,8 +12,8 @@ namespace CompetitionGame.Data.Models
         [JsonProperty("goalsConceded")]
         public int GoalsConceded;
 
-        public decimal AttackStrength =>  (decimal)GoalsMade / (decimal)GamesPlayed;
-        public decimal DefenseStrength => (decimal)GoalsConceded / (decimal)GamesPlayed;
+        public float AttackStrength => (float)GoalsMade / (float)GamesPlayed;
+        public float DefenseStrength => (float)GoalsConceded / (float)GamesPlayed;
     }
 
 }

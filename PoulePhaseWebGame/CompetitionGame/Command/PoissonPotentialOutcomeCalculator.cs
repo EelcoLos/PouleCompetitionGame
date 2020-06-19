@@ -8,7 +8,7 @@ namespace CompetitionGame.Command
         private decimal probabilityLimit;
         IPoissonEvaluator evalHome, evalAway;
 
-        public PoissonPotentialOutcomeCalculator(IPoissonEvaluator EvalHome, IPoissonEvaluator EvalAway, decimal ProbabilityLimit = 0.15M)
+        public PoissonPotentialOutcomeCalculator(IPoissonEvaluator EvalHome, IPoissonEvaluator EvalAway, decimal ProbabilityLimit = 0.04M)
         {
             probabilityLimit = ProbabilityLimit;
             evalHome = EvalHome;

@@ -5,5 +5,6 @@
         public int pouleStance;
         public int goalsFor;
         public int goalsAgainst;
+        public int goalsAwayWeighted;
     }
 }

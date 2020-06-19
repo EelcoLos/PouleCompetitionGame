@@ -11,75 +11,79 @@
     <p>
         This is 
     </p>
-    <form asp-page-handler="Simulate" method="post">
-        <div class="stats">
-            <h2>Global statistics</h2>
-            <table align="center" title="League Statistics">
-                @foreach (var obj in Model.leagueStatsDynamic)
-                {
-                    <tr>
-                        <td>@obj.Key</td>
-                        <td>@obj.Value</td>
-                    </tr>
-                }
-            </table>
-        </div>
-        <div class="teams">
-            <h2>Teams</h2>
-            <table align="center">
-                @for (int i = 0; i < Model.jsonobjects.Count; i++)
-                {
-                    var tmp = "[" + i + "].AreChecked";
-                    var defaultcheck = i >= 0 && i < 4? true : false;
-                    var obj = Model.jsonobjects[i];
+    <div>
+        <form id="simulatePanel" class="simulation" asp-page-handler="Simulate" method="post">
+            <div class="teams">
+                <h2>Teams</h2>
+                <table align="center">
+                    @for (int i = 0; i < Model.jsonobjects.Count; i++)
+                    {
+                        var tmp = "[" + i + "].AreChecked";
+                        var defaultcheck = i >= 0 && i < 4 ? true : false;
+                        var obj = Model.jsonobjects[i];
                         <tr>
                             <td>
                                 <input name="AreChecked" id="@tmp" type="checkbox" value="@i" checked="@defaultcheck" />
                             </td>
-                            <td align="left"><input name="jsonObj" type="hidden" id="@i" value="@obj"/>@obj["teamName"].ToString()</td>
-                    </tr>
-                }
-            </table>
-        </div>
-        <button class="btn btn-default" type="submit">Simulate</button>
-    </form>
-    @if (Model.showScorePanel)
-    {
-        <div class="Results">
-            <h2>Poule matches</h2>
-            <table>
-                @foreach (var pouleresult in Model.apiResults)
-                {
-                    <tr>
-                        <td align="left">@pouleresult["ToString"]</td>
-                    </tr>
-                }
-            </table>
-        </div>
-
-        <div class="Compstats">
-            <h2>Competition Results</h2>
-            <table>
-                <tr>
-                    <th>Team Name</th>
-                    <th>Poule Points</th>
-                    <th>Goals For</th>
-                    <th>Goals Against</th>
-                </tr>
-                @foreach (var pouleresult in Model.apiResults)
-                {
-
-                    @if (pouleresult.ContainsKey("Key"))
-                    {
-                        <tr>
-                            <td align="left">@pouleresult["Key"]["teamName"]</td>
-                            <td>@pouleresult["Value"]["pouleStance"]</td>
-                            <td>@pouleresult["Value"]["goalsFor"]</td>
-                            <td>@pouleresult["Value"]["goalsAgainst"]</td>
+                            <td align="left"><input name="jsonObj" type="hidden" id="@i" value="@obj" />@obj["teamName"].ToString()</td>
                         </tr>
                     }
-                }
-            </table>
+                </table>
+            </div>
+            <div class="stats">
+                <h2>Global statistics</h2>
+                <table align="center" title="League Statistics">
+                    @foreach (var obj in Model.leagueStatsDynamic)
+                    {
+                        <tr>
+                            <td>@obj.Key</td>
+                            <td>@obj.Value</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+            <button class="btn btn-primary" type="submit">Simulate</button>
+        </form>
+    </div>
+    @if (Model.showScorePanel)
+    {
+        <div id="scorePanel">
+            <div class="Results">
+                <h2>Poule matches</h2>
+                <table>
+                    @foreach (var pouleresult in Model.apiResults)
+                    {
+                        <tr>
+                            <td align="left">@pouleresult["ToString"]</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+
+            <div class="Compstats">
+                <h2>Competition Results</h2>
+                <table>
+                    <tr>
+                        <th>Team Name</th>
+                        <th>Poule Points</th>
+                        <th>Goals For</th>
+                        <th>Goals Against</th>
+                    </tr>
+                    @foreach (var pouleresult in Model.apiResults)
+                    {
+
+                        @if (pouleresult.ContainsKey("Key"))
+                        {
+                            <tr>
+                                <td align="left">@pouleresult["Key"]["teamName"]</td>
+                                <td>@pouleresult["Value"]["pouleStance"]</td>
+                                <td>@pouleresult["Value"]["goalsFor"]</td>
+                                <td>@pouleresult["Value"]["goalsAgainst"]</td>
+                            </tr>
+                        }
+                    }
+                </table>
+            </div>
         </div>
     }
 </div>

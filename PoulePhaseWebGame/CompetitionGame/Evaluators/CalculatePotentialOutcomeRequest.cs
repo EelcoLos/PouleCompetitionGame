@@ -10,8 +10,8 @@ namespace CompetitionGame.Command
         public int awayMatches;
         public int numberofTeams = 18;
 
-        public decimal AverageHomeGoals => homeGoals / homeMatches / numberofTeams;
-        public decimal AverageAwayGoals => awayGoals / awayMatches / numberofTeams;
+        public float AverageHomeGoals => (float)homeGoals / (float)homeMatches / (float)numberofTeams;
+        public float AverageAwayGoals => (float)awayGoals / (float)awayMatches / (float)numberofTeams;
 
         public Team homeTeam;
         public Team awayTeam;
