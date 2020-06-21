@@ -3,6 +3,9 @@
 
 Creating a Poule Tournament system with RoundRobin, using 2018's dutch Eredivisie football data
 
+![Overview](https://i.imgur.com/s50XHOo.png)
+Some explanation regarding this simulator is shown, then you can chose an even number of teams to be simulated into a tournament style competition.
+
 Please check out the ![wiki](https://github.com/EelcoLos/PouleCompetitionGame/wiki) for details regarding this project
 
 ## How to run this project
