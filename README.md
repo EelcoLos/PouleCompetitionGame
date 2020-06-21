@@ -8,4 +8,7 @@ Please check out the ![wiki](https://github.com/EelcoLos/PouleCompetitionGame/wi
 ## How to run this project
 
 By downloading the project, open the solution (.sln) file. Make sure both the CompetitionGame **and** the CompetitionGameWebSite project are selected as startup projects..
+
+![Startup Projects Start](https://i.imgur.com/ua5IEgI.png)
+
 Due to some hardcoding on the CompetitionGameWebSite, the API project (CompetitionGame) should run on https://localhost:44308. 
